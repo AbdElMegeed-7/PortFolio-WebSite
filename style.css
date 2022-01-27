@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* Common Style */
+* {
+  margin: 0; /* Default margin and padding */
+  padding: 0; /* Default margin and padding */
+  box-sizing: border-box;
+  text-decoration: none; /* Remove the text underline from the links */
+  list-style-type: none;
+  outline: none;
+  font-family: "jura", sans-serif;
+}
+
+html {
+  font-size: 62.5px;
+}
+/* End Of Common Style */
+
+/* Page BG */
+.page-bg {
+  position: fixed; /* The BG Image Takes the Whole Web Page */
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(images/bg.jpg) center no-repeat; /* linear-gradient To Make the image Darker, .7 for the opacity*/
+  background-size: cover;
+}
+/* End Of Page BG */

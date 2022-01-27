@@ -13,9 +13,76 @@
 }
 
 html {
-  font-size: 62.5px;
+  font-size: 62.5%;
 }
 /* End Of Common Style */
+
+/* Mouse circle */
+.mouse-circle,
+.mouse-dot {
+  border-radius: 50%; /* Make Element Rounded */
+  position: fixed;
+  z-index: 300; /* To make the circle vesible  and set it highr than 0 */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* to make the cusror in the middle of the circle */
+  opacity: 0;
+}
+
+.mouse-circle {
+  width: 6rem;
+  height: 6rem;
+  border: 0.1rem solid #c7a622;
+  animation: mouseCircleAnim 10s infinite linear; /* add keyframe to the mousecircle */
+  /* animation : nameOfTheKeyFrame spicefyTheDuration howToRunTheAnim animTimingFunction  */
+}
+
+@keyframes mouseCircleAnim {
+  0% {
+    width: 6rem;
+    height: 6rem;
+  }
+  25% {
+    width: 8rem;
+    height: 8rem;
+  }
+  35% {
+    width: 4rem;
+    height: 4rem;
+  }
+  70% {
+    width: 8rem;
+    height: 8rem;
+  }
+  100% {
+    width: 6;
+    height: 6;
+  }
+}
+
+.mouse-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #9b0e0e;
+  animation: mouseDotAnim 10s infitite linear;
+}
+
+@keyframes mouseDotAnim {
+  0% {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+  55% {
+    width: 1.5em;
+    height: 10.5rem;
+  }
+  100% {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+}
+/* End Of Mouse circle */
 
 /* Page BG */
 .page-bg {
